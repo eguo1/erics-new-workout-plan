@@ -7,9 +7,16 @@
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
     "morgan": "^1.9.0",
+    "pg": "^7.4.3",
+    "pg-hstore": "^2.3.2",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
-    "react-router-dom": "^4.2.2"
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.2.2",
+    "redux": "^4.0.0",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "sequelize": "^4.37.10"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
@@ -26,6 +33,6 @@
     "start": "node server",
     "start-dev": "webpack -w & nodemon server/index.js"
   },
-  "author": "",
+  "author": "Eric Guo",
   "license": "ISC"
 }
