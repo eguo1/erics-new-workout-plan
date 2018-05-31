@@ -5,8 +5,6 @@ const app = express()
 const path = require('path')
 const morgan = require('morgan')
 const bodyParser = require('body-parser')
-const port = process.env.PORT || 3030
-const db = require('./db')
 
 app.use(morgan('dev'))
 
@@ -27,15 +25,4 @@ app.use((err, req, res, next) => {
   res.status(err.status || 500).send(err.message || 'Internal server error.')
 })
 
-db.sync()
-  .then(() => {
-    app.listen(port, () => {
-      console.log(`
-    
-        Server listening on port ${port}
-    
-        http://localhost:${port}
-    
-      `)
-    })
-  })
+module.exports = app
