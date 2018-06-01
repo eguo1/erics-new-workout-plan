@@ -1,3 +1,5 @@
+'use strict'
+
 import { createStore, applyMiddleware } from 'redux'
 import rootReducer from './index'
 import thunkMiddleware from 'redux-thunk'
