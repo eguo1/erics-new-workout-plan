@@ -14,10 +14,6 @@ const Exercise = db.define('exercise', {
   machine: {
     type: Sequelize.ARRAY(Sequelize.ENUM('dumbbell', 'barbell', 'cable', 'machine')),
     allowNull: false
-  },
-  'muscle-group': {
-    type: Sequelize.ENUM('chest', 'back', 'shoulders', 'biceps', 'triceps', 'legs', 'core'),
-    allowNull: false
   }
 })
 

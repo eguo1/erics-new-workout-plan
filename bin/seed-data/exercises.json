@@ -2,95 +2,81 @@
   "id": "1",
   "name": "Chest press",
   "machine": ["dumbbell", "barbell", "machine"],
-  "muscle-group": "chest",
   "muscleId": "1"
 },{
   "id": "2",
   "name": "Incline press",
   "machine": ["dumbbell", "barbell"],
-  "muscle-group": "chest",
   "muscleId": "2",
   "parentId": "1"
 },{
   "id": "3",
   "name": "Decline press",
   "machine": ["barbell"],
-  "muscle-group": "chest",
   "muscleId": "3",
   "parentId": "1"
 },{
   "id": "4",
   "name": "Neutral grip press",
   "machine": ["dumbbell"],
-  "muscle-group": "chest",
   "muscleId": "1",
   "parentId": "1"
 },{
   "id": "5",
   "name": "Incline neutral grip press",
   "machine": ["dumbbell"],
-  "muscle-group": "chest",
   "muscleId": "2",
   "parentId": "1"
 },{
   "id": "6",
   "name": "Wide grip press",
   "machine": ["barbell"],
-  "muscle-group": "chest",
   "muscleId": "1",
   "parentId": "1"
 },{
   "id": "7",
   "name": "Wide grip incline press",
   "machine": ["barbell"],
-  "muscle-group": "chest",
   "muscleId": "2",
   "parentId": "1"
 },{
   "id": "8",
   "name": "Wide grip decline press",
   "machine": ["barbell"],
-  "muscle-group": "chest",
   "muscleId": "3",
   "parentId": "1"
 },{
   "id": "9",
   "name": "Pec fly",
   "machine": ["dumbbell", "cable", "machine"],
-  "muscle-group": "chest",
   "muscleId": "1"
 },{
   "id": "10",
   "name": "Incline pec fly",
   "machine": ["dumbbell"],
-  "muscle-group": "chest",
   "muscleId": "2",
   "parentId": "4"
 },{
   "id": "11",
   "name": "High cable crossover",
   "machine": ["cable"],
-  "muscle-group": "chest",
   "muscleId": "2",
   "parentId": "4"
 },{
   "id": "12",
   "name": "Low cable crossover",
   "machine": ["cable"],
-  "muscle-group": "chest",
   "muscleId": "3",
   "parentId": "4"
 },{
   "id": "13",
   "name": "Pull-over",
   "machine": ["dumbbell"],
-  "muscle-group": "chest",
   "muscleId": "3"
 },{
   "id": "14",
   "name": "Incline pull-over",
   "machine": ["dumbbell"],
-  "muscle-group": "chest",
   "muscleId": "3",
   "parentId": "13"
 }]
