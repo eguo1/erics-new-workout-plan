@@ -4,7 +4,7 @@ const { db } = require('./server/db/models')
 const app = require('./server')
 const PORT = 3030
 
-db.sync({ force: true })
+db.sync()
   .then(() => {
     app.listen(PORT, () => {
       console.log(`

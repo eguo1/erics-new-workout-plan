@@ -19,7 +19,7 @@ const Exercise = db.define('exercise', {
     }
   },
   machine: {
-    type: Sequelize.ENUM('dumbbell', 'barbell', 'cable', 'machine'),
+    type: Sequelize.ARRAY(Sequelize.ENUM('dumbbell', 'barbell', 'cable', 'machine')),
     allowNull: false
   },
   'muscle-group': {

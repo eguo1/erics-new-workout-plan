@@ -1,0 +1,47 @@
+[{
+  "id": "1",
+  "name": "Bench / chest press",
+  "description": "Works the chest",
+  "machine": ["dumbbell", "barbell", "cable", "machine"],
+  "muscle-group": "chest",
+  "muscleId": "1"
+},{
+  "id": "2",
+  "name": "Incline press",
+  "description": "Works the chest",
+  "machine": ["dumbbell", "barbell", "cable", "machine"],
+  "muscle-group": "chest",
+  "muscleId": "2",
+  "parentId": "1"
+},{
+  "id": "3",
+  "name": "Decline press",
+  "description": "Works the chest",
+  "machine": ["dumbbell", "barbell", "cable", "machine"],
+  "muscle-group": "chest",
+  "muscleId": "3",
+  "parentId": "1"
+},{
+  "id": "4",
+  "name": "Pec fly",
+  "description": "Works the chest",
+  "machine": ["dumbbell", "cable", "machine"],
+  "muscle-group": "chest",
+  "muscleId": "1"
+},{
+  "id": "5",
+  "name": "High pec fly",
+  "description": "Works the chest",
+  "machine": ["cable"],
+  "muscle-group": "chest",
+  "muscleId": "2",
+  "parentId": "4"
+},{
+  "id": "6",
+  "name": "Low pec fly",
+  "description": "Works the chest",
+  "machine": ["cable"],
+  "muscle-group": "chest",
+  "muscleId": "3",
+  "parentId": "4"
+}]

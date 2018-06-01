@@ -1,0 +1,61 @@
+[{
+  "id": "1",
+  "name": "Middle pectorals",
+  "muscle-group": "chest"
+},{
+  "id": "2",
+  "name": "Upper pectorals",
+  "muscle-group": "chest"
+},{
+  "id": "3",
+  "name": "Lower pectorals",
+  "muscle-group": "chest"
+},{
+  "id": "4",
+  "name": "Latissimus dorsi",
+  "muscle-group": "back"
+},{
+  "id": "5",
+  "name": "Lumbar region",
+  "muscle-group": "back"
+},{
+  "id": "6",
+  "name": "Deltoids",
+  "muscle-group": "shoulders"
+},{
+  "id": "7",
+  "name": "Trapezius",
+  "muscle-group": "shoulders"
+},{
+  "id": "8",
+  "name": "Biceps",
+  "muscle-group": "biceps"
+},{
+  "id": "9",
+  "name": "Brachialis",
+  "muscle-group": "biceps"
+},{
+  "id": "10",
+  "name": "Triceps",
+  "muscle-group": "triceps"
+},{
+  "id": "11",
+  "name": "Quadriceps",
+  "muscle-group": "legs"
+},{
+  "id": "12",
+  "name": "Hamstrings",
+  "muscle-group": "legs"
+},{
+  "id": "13",
+  "name": "Calves",
+  "muscle-group": "legs"
+},{
+  "id": "14",
+  "name": "Abdominals",
+  "muscle-group": "core"
+},{
+  "id": "15",
+  "name": "Obliques",
+  "muscle-group": "core"
+}]
