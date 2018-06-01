@@ -11,13 +11,6 @@ const Exercise = db.define('exercise', {
       notEmpty: true
     }
   },
-  description: {
-    type: Sequelize.TEXT,
-    allowNull: false,
-    validate: {
-      notEmpty: true
-    }
-  },
   machine: {
     type: Sequelize.ARRAY(Sequelize.ENUM('dumbbell', 'barbell', 'cable', 'machine')),
     allowNull: false

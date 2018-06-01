@@ -1,14 +1,14 @@
 [{
   "id": "1",
-  "name": "Middle pectorals",
+  "name": "Sternal pectoralis",
   "muscle-group": "chest"
 },{
   "id": "2",
-  "name": "Upper pectorals",
+  "name": "Upper pectoralis",
   "muscle-group": "chest"
 },{
   "id": "3",
-  "name": "Lower pectorals",
+  "name": "Lower pectoralis",
   "muscle-group": "chest"
 },{
   "id": "4",
