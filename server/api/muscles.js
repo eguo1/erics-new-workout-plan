@@ -18,3 +18,12 @@ router.get('/:muscleId', async (req, res, next) => {
   }).catch(next)
   res.json(muscle)
 })
+
+router.get('/group/:groupName', async (req, res, next) => {
+  const { groupName } = req.params
+  const muscles = await Muscle.findAll({
+    where: { 'muscle-group': groupName },
+    include: [ Exercise ]
+  }).catch(next)
+  res.json(muscles)
+})
