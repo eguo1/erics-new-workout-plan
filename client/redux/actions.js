@@ -14,14 +14,22 @@ function getExercises (exercises) {
 
 export function fetchAllExercises () {
   return async dispatch => {
-    const { data } = await axios.get('/api/exercises')
-    dispatch(getExercises(data))
+    try {
+      const { data } = await axios.get('/api/exercises')
+      dispatch(getExercises(data))
+    } catch (err) {
+      console.error(err)
+    }
   }
 }
 
 export function fetchExerciseByGroup (groupName) {
   return async dispatch => {
-    const { data } = await axios.get(`/api/exercises/group/${groupName}`)
-    dispatch(getExercises(data))
+    try {
+      const { data } = await axios.get(`/api/exercises/group/${groupName}`)
+      dispatch(getExercises(data))
+    } catch (err) {
+      console.error(err)
+    }
   }
 }

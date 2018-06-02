@@ -1,11 +1,36 @@
 'use strict'
 
-import React from 'react'
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import { fetchAllExercises } from '../redux/actions'
 
-const App = () => {
-  return (
-    <div>Hello world!</div>
-  )
+class App extends Component {
+  constructor(props) {
+    super(props)
+    this.props.fetchAllExercises()
+  }
+  
+  render () {
+    return (
+      <div>
+        <ul>
+          {this.props.exercises.map(exercise => <li key={exercise.id}>{exercise.name}</li>)}
+        </ul>
+      </div>
+    )
+  }
 }
 
-export default App
+const mapStateToProps = state => {
+  return {
+    exercises: state.exercises
+  }
+}
+
+const mapDispatchToProps = dispatch => {
+  return {
+    fetchAllExercises: () => dispatch(fetchAllExercises())
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(App)
