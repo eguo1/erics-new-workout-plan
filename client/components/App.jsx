@@ -11,9 +11,7 @@ class App extends Component {
 
     const group = 'chest'
 
-    this.props.fetchExercisesByGroup(group)
     this.props.fetchMusclesByGroup(group)
-
     this.state = {
       muscleGroup: group.slice(0, 1).toUpperCase() + group.slice(1)
     }
@@ -22,10 +20,6 @@ class App extends Component {
   render () {
     return (
       <div>
-        <h1>Fetch Exercises By Group</h1>
-        <ul>
-          {this.props.exercises.map(exercise => <li key={exercise.id}>{exercise.name}</li>)}
-        </ul>
         <AllExerciseOptions group={this.state.muscleGroup} muscles={this.props.muscles} />
       </div>
     )
@@ -41,7 +35,6 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    fetchExercisesByGroup: muscleGroup => dispatch(fetchExercisesByGroup(muscleGroup)),
     fetchMusclesByGroup: muscleGroup => dispatch(fetchMusclesByGroup(muscleGroup))
   }
 }
