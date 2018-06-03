@@ -1,61 +1,76 @@
 [{
   "id": "1",
   "name": "Sternal pectoralis",
-  "muscle-group": "chest"
+  "muscle-group": "chest",
+  "ratio": "2"
 },{
   "id": "2",
   "name": "Upper pectoralis",
-  "muscle-group": "chest"
+  "muscle-group": "chest",
+  "ratio": "1"
 },{
   "id": "3",
   "name": "Lower pectoralis",
-  "muscle-group": "chest"
+  "muscle-group": "chest",
+  "ratio": "1"
 },{
   "id": "4",
   "name": "Latissimus dorsi",
-  "muscle-group": "back"
+  "muscle-group": "back",
+  "ratio": "3"
 },{
   "id": "5",
   "name": "Lumbar region",
-  "muscle-group": "back"
+  "muscle-group": "back",
+  "ratio": "1"
 },{
   "id": "6",
   "name": "Deltoids",
-  "muscle-group": "shoulders"
+  "muscle-group": "shoulders",
+  "ratio": "3"
 },{
   "id": "7",
   "name": "Trapezius",
-  "muscle-group": "shoulders"
+  "muscle-group": "shoulders",
+  "ratio": "1"
 },{
   "id": "8",
   "name": "Biceps",
-  "muscle-group": "biceps"
+  "muscle-group": "biceps",
+  "ratio": "3"
 },{
   "id": "9",
   "name": "Brachialis",
-  "muscle-group": "biceps"
+  "muscle-group": "biceps",
+  "ratio": "1"
 },{
   "id": "10",
   "name": "Triceps",
-  "muscle-group": "triceps"
+  "muscle-group": "triceps",
+  "ratio": "1"
 },{
   "id": "11",
   "name": "Quadriceps",
-  "muscle-group": "legs"
+  "muscle-group": "legs",
+  "ratio": "3"
 },{
   "id": "12",
   "name": "Hamstrings",
-  "muscle-group": "legs"
+  "muscle-group": "legs",
+  "ratio": "3"
 },{
   "id": "13",
   "name": "Calves",
-  "muscle-group": "legs"
+  "muscle-group": "legs",
+  "ratio": "1"
 },{
   "id": "14",
   "name": "Abdominals",
-  "muscle-group": "core"
+  "muscle-group": "core",
+  "ratio": "1"
 },{
   "id": "15",
   "name": "Obliques",
-  "muscle-group": "core"
+  "muscle-group": "core",
+  "ratio": "1"
 }]

@@ -58,13 +58,13 @@
   "parentId": "4"
 },{
   "id": "11",
-  "name": "High cable crossover",
+  "name": "High crossover",
   "machine": ["cable"],
   "muscleId": "2",
   "parentId": "4"
 },{
   "id": "12",
-  "name": "Low cable crossover",
+  "name": "Low crossover",
   "machine": ["cable"],
   "muscleId": "3",
   "parentId": "4"

@@ -14,6 +14,9 @@ const Muscle = db.define('muscle', {
   'muscle-group': {
     type: Sequelize.ENUM('chest', 'back', 'shoulders', 'biceps', 'triceps', 'legs', 'core'),
     allowNull: false
+  },
+  ratio: {
+    type: Sequelize.INTEGER
   }
 })
 
