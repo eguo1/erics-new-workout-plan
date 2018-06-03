@@ -3,12 +3,20 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { fetchExercisesByGroup, fetchMusclesByGroup } from '../redux/actions'
+import AllExerciseOptions from './AllExerciseOptions'
 
 class App extends Component {
   constructor(props) {
     super(props)
-    this.props.fetchExercisesByGroup('chest')
-    this.props.fetchMusclesByGroup('chest')
+
+    const group = 'chest'
+
+    this.props.fetchExercisesByGroup(group)
+    this.props.fetchMusclesByGroup(group)
+
+    this.state = {
+      muscleGroup: group.slice(0, 1).toUpperCase() + group.slice(1)
+    }
   }
 
   render () {
@@ -18,31 +26,7 @@ class App extends Component {
         <ul>
           {this.props.exercises.map(exercise => <li key={exercise.id}>{exercise.name}</li>)}
         </ul>
-        <h1>Fetch Muscles By Group</h1>
-        {this.props.muscles.map(muscle => {
-          return (
-            <div key={muscle.id}>
-              <h2>{muscle.name}</h2>
-              <p>Minimum exercises: {muscle.ratio}</p>
-              <ul>
-                {muscle.exercises.map(exercise => {
-                  const multiMachines = exercise.machine.length > 1
-                  return (
-                    <li key={exercise.id}>{exercise.name}
-                      {multiMachines ? (
-                        <ul>
-                          {exercise.machine.map(elem => {
-                            return <li key={elem}>{elem}</li>
-                          })}
-                        </ul>
-                      ) : ` - ${exercise.machine[0]}`}
-                    </li>
-                  )
-                })}
-              </ul>
-            </div>
-          )
-        })}
+        <AllExerciseOptions group={this.state.muscleGroup} muscles={this.props.muscles} />
       </div>
     )
   }
